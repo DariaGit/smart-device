@@ -22,3 +22,27 @@
   font-display: swap;
   src: url("../fonts/pt_mono_regular.woff2") format("woff2"), url("../fonts/pt_mono_regular.woff") format("woff");
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
