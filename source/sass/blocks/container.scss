@@ -1,9 +1,13 @@
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1412px;
+  padding: 0 40px;
+  max-width: 1492px; // width 1412px + paddings 40px * 2
+  width: 100%;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
+    width: 100%;
     padding: 0 25px;
   }
 

@@ -1,0 +1,40 @@
+.button {
+  margin: 0;
+  padding: 14px 28px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  font-family: $buttons-font-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $font-color-light;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+
+  &--light {
+    border-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+  &--accent {
+    background: $accent-color;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: #ffffff;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -7,16 +7,15 @@
 }
 
 @font-face {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/roboto_condensed_bold.woff2") format("woff2"), url("../fonts/roboto_condensed_bold.woff") format("woff");
 }
 
-
 @font-face {
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -45,4 +44,18 @@ main {
 
 footer {
   flex: 0 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: $links-font-family;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

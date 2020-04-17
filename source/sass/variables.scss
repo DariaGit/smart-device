@@ -1,12 +1,18 @@
 // Font
 $font-color-light: #ffffff;
 $font-color-dark: #666666;
-$accent-color: #00b2ff;
+$buttons-font-family: "Roboto Condensed", sans-serif;
+$links-font-family: "PT Mono", monospace;
+$titles-font-family: "Roboto Condensed", sans-serif;
+$main-font-family: "PT Mono", monospace;
 
 // Background
 $background-color-light: #e5e5e5;
 $background-color-dark: #1b2d37;
 $footer-background-color: #fafafa;
+
+// Colors
+$accent-color: #00b2ff;
 
 // Breakpoints
 $mobile-width: 767px;
