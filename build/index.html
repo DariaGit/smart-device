@@ -16,7 +16,10 @@
   <div class="container page-header__container">
     <div class="page-header__top">
       <a class="page-header__logo" href="#">
-        <img src="img/full-logo-light.svg" width="202" height="52" alt="Логотип Smart Device">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/short-logo.svg">
+          <img class="page-header__logo-img" src="img/full-logo-light.svg" alt="Логотип Smart Device">
+        </picture>
       </a>
       <div class="page-header__contacts">
         <a class="page-header__link page-header__link--email" href="mailto:info@sd.ru"><span class="page-header__tablet-hidden">info@sd.ru</span></a>
@@ -33,5 +36,6 @@
   </div>
 
 </header>
+<script src="js/script.js"></script>
 </body>
 </html>

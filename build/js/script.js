@@ -1,15 +1,13 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+(function () {
+  'use strict';
 
-pageHeader.classList.remove('page-header--nojs');
+  (() => {
+    const buttonElement = document.querySelector(`.page-header__button-consultation`);
+    const mobileWidth = 768;
+    const buttonText = `Бесплатная консультация`;
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+    if (buttonElement && screen.width < mobileWidth) {
+      buttonElement.textContent = buttonText;
+    }
+  })();
+})();

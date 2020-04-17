@@ -6,6 +6,12 @@
       url("../../img/intro-background-tablet.png") no-repeat top right,
       $background-color-dark;
   }
+
+  @media (max-width: $mobile-width) {
+    background: url("../../img/intro-background-mask-mobile.png") center,
+      url("../../img/intro-background-mobile.png") no-repeat top right,
+      $background-color-dark;
+  }
 }
 
 .page-header__container {
@@ -14,6 +20,10 @@
 
   @media (max-width: $tablet-width) {
     min-height: 681px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 647px;
   }
 }
 
@@ -27,6 +37,20 @@
   @media (max-width: $tablet-width) {
     padding: 20px 0;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 16px 0;
+  }
+}
+
+.page-header__logo-img {
+  width: 202px;
+  height: 52px;
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .page-header__contacts {
@@ -38,6 +62,10 @@
   @media (max-width: $tablet-width) {
     margin-top: 14px;
     align-self: flex-start;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 8px;
   }
 }
 
@@ -71,6 +99,10 @@
         left: -24px;
         background-size: 24px 24px;
       }
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-left: 34px;
     }
   }
 
@@ -116,6 +148,13 @@
     line-height: 70px;
     max-width: 470px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 212px 0 0;
+    font-size: 40px;
+    line-height: 47px;
+    max-width: 100%;
+  }
 }
 
 .page-header__description {
@@ -148,6 +187,17 @@
       left: -48px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 27px 0 0 51px;
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 100%;
+
+    &::before {
+      top: 15px;
+    }
+  }
 }
 
 .page-header__button-consultation {
@@ -159,6 +209,11 @@
   @media (max-width: $tablet-width) {
     margin: 55px 0 0 114px;
     padding: 17px 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 40px 0 0;
+    width: 100%;
   }
 }
 
