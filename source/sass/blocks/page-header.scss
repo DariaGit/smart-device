@@ -11,14 +11,34 @@
 .page-header__container {
   position: relative;
   min-height: 880px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 681px;
+  }
 }
 
 .page-header__top {
   display: flex;
+  padding: 33px 0;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 33px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 0;
+  }
+}
+
+.page-header__contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 14px;
+    align-self: flex-start;
+  }
 }
 
 .page-header__link {
@@ -39,6 +59,18 @@
       top: -2px;
       left: -34px;
       background: url("../../img/icons/phone-icon.svg") no-repeat center;
+      background-size: 18px 18px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-left: 45px;
+
+      &::before {
+        width: 24px;
+        height: 24px;
+        left: -24px;
+        background-size: 24px 24px;
+      }
     }
   }
 
@@ -51,15 +83,17 @@
       top: 1px;
       left: -39px;
       background: url("../../img/icons/email-icon.svg") no-repeat center;
+      background-size: 19px 14px;
+    }
+
+    @media (max-width: $tablet-width) {
+      &::before {
+        width: 26px;
+        height: 19px;
+        background-size: 26px 19px;
+      }
     }
   }
-}
-
-.page-header__contacts {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .page-header__button-call {
@@ -71,9 +105,17 @@
   text-transform: uppercase;
   font-size: 80px;
   line-height: 94px;
+  font-weight: 700;
   letter-spacing: 0.07em;
   color: $font-color-light;
   margin-top: 194px;
+
+  @media (max-width: $tablet-width) {
+    margin: 93px 0 0 63px;
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 470px;
+  }
 }
 
 .page-header__description {
@@ -94,6 +136,18 @@
     left: -94px;
     background-color: #ffffff;
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 28px 0 0 114px;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 356px;
+
+    &::before {
+      width: 33px;
+      left: -48px;
+    }
+  }
 }
 
 .page-header__button-consultation {
@@ -101,6 +155,11 @@
   padding: 17px 44px;
   font-size: 16px;
   line-height: 19px;
+
+  @media (max-width: $tablet-width) {
+    margin: 55px 0 0 114px;
+    padding: 17px 30px;
+  }
 }
 
 .page-header__scroll-btn {
@@ -110,4 +169,10 @@
   line-height: 16px;
   transform: rotate(-90deg);
   opacity: 0.5;
+}
+
+.page-header__tablet-hidden {
+  @media (max-width: $tablet-width) {
+    @include visually-hidden;
+  }
 }
