@@ -1,5 +1,11 @@
 .page-header {
   background: $background-color-dark url("../../img/intro-background.png") no-repeat center;
+
+  @media (max-width: $tablet-width) {
+    background: url("../../img/intro-background-mask-tablet.png") center,
+      url("../../img/intro-background-tablet.png") no-repeat top right,
+      $background-color-dark;
+  }
 }
 
 .page-header__container {
