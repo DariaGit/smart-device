@@ -1,0 +1,135 @@
+.page-footer {
+  background-color: $footer-background-color;
+  padding-top: 65px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+}
+
+.page-footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.page-footer__about {
+  //margin-right: 206px;
+}
+
+.page-footer__logo-img {
+  margin-bottom: 46px;
+}
+
+.page-footer__social-link {
+  width: 27px;
+  height: 27px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.page-footer__social-item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__title {
+  margin-bottom: 24px;
+  display: block;
+  font-family: $titles-font-family;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.page-footer__links-and-contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 70%;
+}
+
+.page-footer__social-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__sections-list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 73px;
+}
+
+.page-footer__section-link {
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.page-footer__contacts {
+  width: 34%;
+}
+
+.page-footer__address {
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.page-footer__phones-list {
+  @include list-reset;
+}
+
+.page-footer__phone-number {
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.page-footer__bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: $main-font-family;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #1b2d37;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #626962;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.page-footer__copyright {
+  padding: 14px 0;
+  display: flex;
+}
+
+.page-footer__copyright-item {
+  display: block;
+  margin-right: 72px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__privacy {
+  width: 34%;
+}
