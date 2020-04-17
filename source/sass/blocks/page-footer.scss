@@ -31,13 +31,15 @@
     &::after {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 100vw;
       height: 1px;
       background-color: #626962;
       opacity: 0.2;
       bottom: -26px;
       left: 0;
       right: 0;
+      margin-left: -25px; // container padding
+      margin-right: -25px; // container padding
     }
   }
 }
@@ -173,6 +175,12 @@
 
   @media (max-width: $tablet-width) {
     padding: 22px 0 24px;
+
+    &::before {
+      width: 100vw;
+      margin-left: -25px; //container padding
+      margin-right: -25px; //container padding
+    }
   }
 }
 
