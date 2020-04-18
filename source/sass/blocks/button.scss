@@ -37,4 +37,15 @@
       border-color: #ffffff;
     }
   }
+
+  &--light-accent {
+    border-color: $accent-color;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $font-color-light;
+      background: $accent-color;
+    }
+  }
 }

@@ -4,6 +4,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $font-color-dark;
+  background: #ffffff url("../../img/advantages-background.svg") no-repeat center;
 }
 
 .advantages__list {
@@ -55,4 +56,8 @@
 
 .advantages__item:hover .advantages__icon path {
   fill: #ffffff;
+}
+
+.advantages__content {
+  margin-bottom: 105px;
 }

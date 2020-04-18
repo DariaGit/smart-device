@@ -1,0 +1,37 @@
+.about-company {
+  position: relative;
+  padding-left: 180px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $font-color-dark;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    top: 3px;
+    left: -30px;
+    background: url("../../img/year.png") no-repeat center;
+  }
+}
+
+.about-company__title {
+  @include page-title;
+  margin-bottom: 19px;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__text {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-company__button {
+  margin-top: 18px;
+  min-width: 123px;
+}
