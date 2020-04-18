@@ -1,0 +1,12 @@
+.narrow-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1170px;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
