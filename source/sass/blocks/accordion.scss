@@ -1,0 +1,48 @@
+.accordion {
+  @media (max-width: $tablet-width) {
+    transition: 0.4s;
+    position: relative;
+    margin-bottom: 31px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #c4c4c4;
+    }
+
+    &::before {
+      width: 16px;
+      height: 1px;
+      top: 7px;
+      right: 2px;
+    }
+
+    &::after {
+      width: 1px;
+      height: 16px;
+      top: 0;
+      right: 9.5px;
+      opacity: 1;
+    }
+  }
+}
+
+.accordion--close {
+  &::after {
+    opacity: 0;
+  }
+}
+
+.accordion__content {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.accordion__content--show {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
