@@ -1,5 +1,5 @@
 .accordion {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     transition: 0.4s;
     position: relative;
     margin-bottom: 31px;
@@ -36,13 +36,13 @@
 }
 
 .accordion__content {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     display: none;
   }
 }
 
 .accordion__content--show {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     display: block;
   }
 }
