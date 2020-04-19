@@ -24,11 +24,19 @@
     height: 256px;
   }
 
+  @media (max-width: $mobile-width) {
+    padding: 20px 30px 53px 35px;
+  }
+
   &--production {
     background-image: url("../../img/production.png");
 
     @media (max-width: $tablet-width) {
       background-image: url("../../img/production-tablet.png");
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../../img/production-mobile.png");
     }
   }
 
@@ -38,6 +46,10 @@
     @media (max-width: $tablet-width) {
       background-image: url("../../img/mounting-tablet.png");
     }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../../img/mounting-mobile.png");
+    }
   }
 
   &--components {
@@ -45,6 +57,10 @@
 
     @media (max-width: $tablet-width) {
       background-image: url("../../img/components-tablet.png");
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../../img/components-mobile.png");
     }
   }
 }

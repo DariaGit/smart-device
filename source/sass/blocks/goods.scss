@@ -19,6 +19,13 @@
     font-size: 32px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 10px;
+    margin-bottom: 42px;
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .goods__list {
@@ -42,5 +49,9 @@
   @media (max-width: $tablet-width) {
     margin-right: 0;
     margin-bottom: 46px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
   }
 }
