@@ -9,6 +9,11 @@
 
   @media (max-width: $tablet-width) {
     padding: 80px 0 103px;
+    background: $accent-color;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 0 42px;
   }
 }
 
@@ -40,6 +45,10 @@
       @include visually-hidden;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .questions__title {
@@ -53,6 +62,12 @@
     font-size: 32px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .questions__info {
@@ -62,11 +77,20 @@
     margin-left: 5px;
     margin-bottom: 53px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
 }
 
 .questions__form {
   @media (max-width: $tablet-width) {
     margin-left: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
   }
 }
 

@@ -10,6 +10,11 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   &--submit {
     @media (max-width: $tablet-width) {
       justify-content: flex-start;
@@ -38,6 +43,11 @@
   @media (max-width: $tablet-width) {
     padding: 15px 18px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+    padding: 13px 18px 16px 17px;
+  }
 }
 
 .site-form input::placeholder,
@@ -47,6 +57,10 @@
 
 .site-form input {
   width: 47.4%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .site-form textarea {
@@ -56,6 +70,11 @@
 
   @media (max-width: $tablet-width) {
     min-height: 161px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+    min-height: 104px;
   }
 }
 
@@ -76,6 +95,10 @@
     left: -32px;
     border: 1px solid #ffffff;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 34px;
+  }
 }
 
 .site-form input[type="checkbox"]:checked + label {
@@ -91,6 +114,13 @@
   @media (max-width: $tablet-width) {
     margin-right: 73px;
     min-width: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 23px;
+    width: 100%;
+    min-width: 100%;
   }
 }
 

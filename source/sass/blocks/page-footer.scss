@@ -162,6 +162,11 @@
 .page-footer__section-link {
   color: #1b2d37;
   opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .page-footer__contacts {
