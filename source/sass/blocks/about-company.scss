@@ -27,6 +27,14 @@
       background-size: 251.08px 361.79px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+
+    &::before {
+      @include visually-hidden;
+    }
+  }
 }
 
 .about-company__title {
@@ -40,6 +48,12 @@
     font-size: 32px;
     line-height: 45px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 21px;
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .about-company__text {
@@ -52,6 +66,10 @@
   @media (max-width: $tablet-width) {
     margin-left: 3px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .about-company__button {
@@ -61,5 +79,9 @@
   @media (max-width: $tablet-width) {
     margin: 22px 0 0 3px;
     min-width: 122px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: -12px 0 0 3px;
   }
 }
