@@ -6,6 +6,10 @@
   color: $font-color-light;
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 0 103px;
+  }
 }
 
 .questions__narrow-container {
@@ -27,6 +31,15 @@
     background: url("../../img/paper-airplane.png") no-repeat center;
   }
 
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    padding: 0 63px;
+    width: 100%;
+
+    &::before {
+      @include visually-hidden;
+    }
+  }
 }
 
 .questions__title {
@@ -34,10 +47,27 @@
   margin-bottom: 8px;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .questions__info {
   margin-bottom: 51px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 5px;
+    margin-bottom: 53px;
+  }
+}
+
+.questions__form {
+  @media (max-width: $tablet-width) {
+    margin-left: 4px;
+  }
 }
 
 .questions__agreement {

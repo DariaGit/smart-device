@@ -9,6 +9,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  &--submit {
+    @media (max-width: $tablet-width) {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .site-form input,
@@ -28,6 +34,10 @@
   line-height: 22px;
   font-family: $main-font-family;
   color: $font-color-light;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 18px;
+  }
 }
 
 .site-form input::placeholder,
@@ -43,6 +53,10 @@
   width: 100%;
   min-height: 154px;
   resize: none;
+
+  @media (max-width: $tablet-width) {
+    min-height: 161px;
+  }
 }
 
 .site-form input[type="checkbox"] {
@@ -73,6 +87,11 @@
 .site-form button[type="submit"] {
   margin-right: 70px;
   min-width: 270px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 73px;
+    min-width: 280px;
+  }
 }
 
 .site-form__agreement {
