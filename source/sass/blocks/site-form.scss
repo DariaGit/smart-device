@@ -1,0 +1,82 @@
+.site-form {
+  font-family: $main-font-family;
+  color: $font-color-light;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.site-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.site-form input,
+.site-form textarea,
+.site-form select {
+  -webkit-appearance: none;
+}
+
+.site-form input,
+.site-form textarea {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: none;
+  background: #19baff;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font-family;
+  color: $font-color-light;
+}
+
+.site-form input::placeholder,
+.site-form textarea::placeholder {
+  color: $font-color-light;
+}
+
+.site-form input {
+  width: 47.4%;
+}
+
+.site-form textarea {
+  width: 100%;
+  min-height: 154px;
+  resize: none;
+}
+
+.site-form input[type="checkbox"] {
+  @include visually-hidden;
+}
+
+.site-form input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 1px;
+    left: -32px;
+    border: 1px solid #ffffff;
+  }
+}
+
+.site-form input[type="checkbox"]:checked + label {
+  &::before {
+    background: url("../../img/icons/checkbox.svg") no-repeat center;
+  }
+}
+
+.site-form button[type="submit"] {
+  margin-right: 70px;
+  min-width: 270px;
+}
+
+.site-form__agreement {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255,255,255,.8);
+}

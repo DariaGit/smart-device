@@ -48,4 +48,13 @@
       background: $accent-color;
     }
   }
+
+  &--white {
+    border: 1px solid #ffffff;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
 }
