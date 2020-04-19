@@ -13,6 +13,19 @@
     top: 3px;
     left: -30px;
     background: url("../../img/year.png") no-repeat center;
+    background-size: 220px 317px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 185px;
+
+    &::before {
+      width: 251.08px;
+      height: 361.79px;
+      top: -2px;
+      left: -33px;
+      background-size: 251.08px 361.79px;
+    }
   }
 }
 
@@ -21,6 +34,12 @@
   margin-bottom: 19px;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .about-company__text {
@@ -29,9 +48,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
 }
 
 .about-company__button {
   margin-top: 18px;
   min-width: 123px;
+
+  @media (max-width: $tablet-width) {
+    margin: 22px 0 0 3px;
+    min-width: 122px;
+  }
 }

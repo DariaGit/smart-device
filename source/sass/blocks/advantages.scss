@@ -5,6 +5,10 @@
   line-height: 22px;
   color: $font-color-dark;
   background: #ffffff url("../../img/advantages-background.svg") no-repeat center;
+
+  @media (max-width: $tablet-width) {
+    padding: 59px 0 82px 0;
+  }
 }
 
 .advantages__list {
@@ -18,11 +22,12 @@
   margin-bottom: 30px;
   padding: 39px 43px;
   display: block;
-  width: 570px;
+  width: 48.7%;
   min-height: 299px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $accent-color;
   cursor: pointer;
+  background-color: #ffffff;
   transition: 0.3s;
 
   &:nth-last-child(-n+2) {
@@ -32,6 +37,12 @@
   &:hover {
     background-color: $accent-color;
     color: $font-color-light;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 24px 20px 20px 24px;
+    width: 47.9%;
+    min-height: auto;
   }
 }
 
@@ -43,6 +54,10 @@
   line-height: 34px;
   color: $accent-color;
   transition: 0.3s;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 9px;
+  }
 }
 
 .advantages__item:hover .advantages__title {
@@ -60,4 +75,8 @@
 
 .advantages__content {
   margin-bottom: 105px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
