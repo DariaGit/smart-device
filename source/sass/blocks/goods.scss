@@ -1,0 +1,27 @@
+.goods {
+  padding: 89px 0 127px;
+  background: $background-color-dark;
+  color: $font-color-light;
+}
+
+.goods__title {
+  @include page-title;
+  margin-bottom: 51px;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.goods__list {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.goods__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

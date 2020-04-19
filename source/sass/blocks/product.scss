@@ -1,0 +1,51 @@
+.product {
+  padding: 50px 30px 53px 44px;
+  position: relative;
+  box-sizing: border-box;
+  width: 370px;
+  height: 620px;
+  overflow: hidden;
+  background: $background-color-dark no-repeat center;
+  background-size: 370px 620px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 63px;
+    bottom: 0;
+    right: 0;
+    background: $accent-color url("../../img/icons/arrow-right-icon.svg") no-repeat center;
+  }
+
+  &--production {
+    background-image: url("../../img/production.png");
+  }
+
+  &--mounting {
+    background-image: url("../../img/mounting.png");
+  }
+
+  &--components {
+    background-image: url("../../img/components.png");
+  }
+}
+
+.product__link {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.product__title {
+  @include page-title;
+  font-size: 20px;
+  line-height: 30px;
+  color: $font-color-light;
+  width: 173px;
+}
