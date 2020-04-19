@@ -2,6 +2,10 @@
   padding: 89px 0 127px;
   background: $background-color-dark;
   color: $font-color-light;
+
+  @media (max-width: $tablet-width) {
+    padding: 50px 0 32px;
+  }
 }
 
 .goods__title {
@@ -9,6 +13,12 @@
   margin-bottom: 51px;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .goods__list {
@@ -16,6 +26,10 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .goods__item {
@@ -23,5 +37,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 46px;
   }
 }
