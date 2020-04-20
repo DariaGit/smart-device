@@ -7,6 +7,9 @@
     <title>Smart Device</title>
     <meta name="description" content="Лига А: онбординг">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <link rel="preload" href="fonts/pt_mono_regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto_condensed_regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto_condensed_bold.woff2" as="font" crossorigin="anonymous">
@@ -30,13 +33,13 @@
     <div class="page-header__intro">
       <h1 class="page-header__title">Печатные платы</h1>
       <p class="page-header__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <button class="button button--accent page-header__button-consultation" type="button">Получить бесплатную консультацию</button>
+      <a class="button button--accent page-header__button-consultation" href="#consultation" type="button">Получить бесплатную консультацию</a>
     </div>
-    <a class="page-header__scroll-btn page-header__tablet-hidden" href="#">Скролл вниз</a>
+    <a class="page-header__scroll-btn page-header__tablet-hidden" href="#advantages">Скролл вниз</a>
   </div>
 </header>
 <main>
-  <div class="advantages">
+  <div class="advantages" id="advantages">
     <div class="container">
       <section class="advantages__content narrow-container">
         <h2 class="visually-hidden">Преимущества компании Smart Device</h2>
@@ -125,7 +128,7 @@
       </div>
     </div>
   </section>
-  <section class="questions">
+  <section class="questions" id="consultation">
     <div class="container">
       <div class="narrow-container questions__narrow-container">
         <div class="questions__wrapper">
@@ -139,7 +142,7 @@
               <input id="phone" name="phone" type="tel" placeholder="Телефон">
               <label class="visually-hidden" for="text">Введите ваш номер телефона</label>
             </div>
-            <textarea id="text" name="text" placeholder="Ваш вопрос"></textarea>
+            <textarea id="text" name="question-text" placeholder="Ваш вопрос"></textarea>
             <div class="site-form__wrapper site-form__wrapper--submit">
               <button class="button button--white" type="submit">Задать вопрос</button>
               <input type="checkbox" name="agreement" id="agreement" checked="">
@@ -260,12 +263,12 @@
   <form class="site-form modal-callback__form" action="#">
     <div class="site-form__wrapper modal-callback__form-wrapper">
       <label class="visually-hidden" for="callback-name">Введите ваше имя</label>
-      <input id="callback-name" name="callback-name" type="text" placeholder="Имя">
+      <input id="callback-name" name="name" type="text" placeholder="Имя" required="">
       <label class="visually-hidden" for="callback-phone">Введите ваш номер телефона</label>
-      <input id="callback-phone" name="callback-phone" type="tel" placeholder="Телефон">
+      <input id="callback-phone" name="phone" type="tel" placeholder="Телефон" required="">
       <label class="visually-hidden" for="callback-text">Введите ваш номер телефона</label>
     </div>
-    <textarea id="callback-text" name="callback-text" placeholder="Ваш вопрос"></textarea>
+    <textarea id="callback-text" name="callback-text" placeholder="Ваш вопрос" required=""></textarea>
     <div class="site-form__wrapper modal-callback__form-wrapper">
       <button class="button button--white" type="submit">Отправить</button>
       <input type="checkbox" id="callback-agreement" name="callback-agreement" checked="">

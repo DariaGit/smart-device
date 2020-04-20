@@ -35,8 +35,13 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
   overflow-x: hidden;
+}
+
+body.noscroll {
+  width: 100%;
+  position:fixed;
+  overflow-y: scroll;
 }
 
 main {

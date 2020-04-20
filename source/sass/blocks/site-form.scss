@@ -33,12 +33,25 @@
   margin-bottom: 40px;
   box-sizing: border-box;
   padding: 14px 16px;
-  border: none;
+  border: 1px solid transparent;
   background: #19baff;
   font-size: 16px;
   line-height: 22px;
   font-family: $main-font-family;
   color: $font-color-light;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+
+  &:invalid {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ff5660;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 15px 18px;

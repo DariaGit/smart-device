@@ -76,7 +76,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid rgba(100%,100%,100%,.3);
+    border: 1px solid $accent-color;
     z-index: 5;
   }
 }
