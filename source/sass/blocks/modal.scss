@@ -1,0 +1,73 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+  70% {
+    transform: translateY(-30px);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
+  padding: 31px 40px 37px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 490px;
+  top: 11.7%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: $main-font-family;
+  font-size: 16px;
+  line-height: 22px;
+  background: $accent-color;
+  color: $font-color-light;
+  z-index: 200;
+}
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  width: 16.56px;
+  height: 16.56px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -2px;
+    width: 23px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

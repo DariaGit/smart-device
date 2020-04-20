@@ -253,6 +253,27 @@
     </div>
   </div>
 </footer>
+<section class="modal modal-callback">
+  <button class="modal__close" type="button">Закрыть</button>
+  <h2 class="modal-callback__title">Закажите звонок</h2>
+  <p class="modal-callback__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+  <form class="site-form modal-callback__form" action="#">
+    <div class="site-form__wrapper modal-callback__form-wrapper">
+      <label class="visually-hidden" for="callback-name">Введите ваше имя</label>
+      <input id="callback-name" name="callback-name" type="text" placeholder="Имя">
+      <label class="visually-hidden" for="callback-phone">Введите ваш номер телефона</label>
+      <input id="callback-phone" name="callback-phone" type="tel" placeholder="Телефон">
+      <label class="visually-hidden" for="callback-text">Введите ваш номер телефона</label>
+    </div>
+    <textarea id="callback-text" name="callback-text" placeholder="Ваш вопрос"></textarea>
+    <div class="site-form__wrapper modal-callback__form-wrapper">
+      <button class="button button--white" type="submit">Отправить</button>
+      <input type="checkbox" id="callback-agreement" name="callback-agreement" checked="">
+      <label class="site-form__agreement" for="callback-agreement">Я согласен на обработку персональных данных</label>
+    </div>
+  </form>
+</section>
+<div class="overlay"></div>
 <script src="js/script.js"></script>
 </body>
 </html>
