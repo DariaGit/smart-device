@@ -1,5 +1,5 @@
 .goods {
-  padding: 89px 0 127px;
+  padding: 89px 0 97px;
   background: $background-color-dark;
   color: $font-color-light;
 
@@ -41,6 +41,7 @@
 
 .goods__item {
   margin-right: 30px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-right: 0;
