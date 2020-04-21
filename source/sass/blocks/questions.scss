@@ -1,6 +1,6 @@
 .questions {
   padding: 93px 0 109px;
-  background:  url("../../img/questions-background.svg") no-repeat 98% -60px,
+  background:  url("../img/questions-background.svg") no-repeat 98% -60px,
                 $accent-color;
   font-family: $main-font-family;
   color: $font-color-light;
@@ -33,7 +33,7 @@
     height: 288px;
     top: 68px;
     left: -625px;
-    background: url("../../img/paper-airplane.png") no-repeat center;
+    background: url("../img/paper-airplane.png") no-repeat center;
   }
 
   @media (max-width: $tablet-width) {

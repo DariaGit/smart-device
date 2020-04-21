@@ -15,7 +15,7 @@
     height: 63px;
     bottom: 0;
     right: 0;
-    background: $accent-color url("../../img/icons/arrow-right-icon.svg") no-repeat center;
+    background: $accent-color url("../img/icons/arrow-right-icon.svg") no-repeat center;
   }
 
   @media (max-width: $tablet-width) {
@@ -29,38 +29,38 @@
   }
 
   &--production {
-    background-image: url("../../img/production.png");
+    background-image: url("../img/production.png");
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/production-tablet.png");
+      background-image: url("../img/production-tablet.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/production-mobile.png");
+      background-image: url("../img/production-mobile.png");
     }
   }
 
   &--mounting {
-    background-image: url("../../img/mounting.png");
+    background-image: url("../img/mounting.png");
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/mounting-tablet.png");
+      background-image: url("../img/mounting-tablet.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/mounting-mobile.png");
+      background-image: url("../img/mounting-mobile.png");
     }
   }
 
   &--components {
-    background-image: url("../../img/components.png");
+    background-image: url("../img/components.png");
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/components-tablet.png");
+      background-image: url("../img/components-tablet.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/components-mobile.png");
+      background-image: url("../img/components-mobile.png");
     }
   }
 }
