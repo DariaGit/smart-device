@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 26px;
+    margin-bottom: 0;
   }
 }
 
@@ -142,7 +142,7 @@
 
 .page-footer__sections {
   @media (max-width: $mobile-width) {
-    margin-bottom: 60px;
+    margin-bottom: 27px;
   }
 }
 
@@ -151,6 +151,10 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -196,6 +200,12 @@
       margin-left: -15px; // container padding
       margin-right: -15px; // container padding
     }
+  }
+}
+
+.page-footer__address-wrapper {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 26px;
   }
 }
 
