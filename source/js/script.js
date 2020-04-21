@@ -11,11 +11,11 @@
 }());
 
 (function () {
-  const ACCORDION_ELEMENTS = document.querySelectorAll(`.accordion`);
+  const ACCORDION_ELEMENTS = document.querySelectorAll(`.accordion__toggle`);
 
   ACCORDION_ELEMENTS.forEach(function(item) {
     item.onclick = function(){
-      this.classList.toggle(`accordion--close`);
+      this.classList.toggle(`accordion__toggle--close`);
       this.nextElementSibling.classList.toggle(`accordion__content--show`);
     }
   });

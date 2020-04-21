@@ -1,4 +1,4 @@
-.accordion {
+.accordion__toggle {
   @media (max-width: $mobile-width) {
     transition: 0.4s;
     position: relative;
@@ -29,7 +29,7 @@
   }
 }
 
-.accordion--close {
+.accordion__toggle--close {
   &::after {
     opacity: 0;
   }
