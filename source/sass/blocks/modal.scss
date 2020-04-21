@@ -1,22 +1,33 @@
 .modal {
   display: none;
-  padding: 31px 40px 37px;
-  box-sizing: border-box;
-  position: fixed;
-  width: 490px;
-  top: 11.7%;
-  left: 50%;
-  transform: translate(-50%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-y: scroll;
   font-family: $main-font-family;
   font-size: 16px;
   line-height: 22px;
-  background: $accent-color;
   color: $font-color-light;
   z-index: 200;
 
   &--show {
     display: block;
   }
+}
+
+.modal__wrapper {
+  margin-bottom: 40px;
+  padding: 31px 40px 37px;
+  position: absolute;
+  width: 490px;
+  top: 8.7%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #00b2ff;
+  box-sizing: border-box;
 }
 
 .modal__close {

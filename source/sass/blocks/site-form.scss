@@ -25,7 +25,7 @@
 .site-form input,
 .site-form textarea,
 .site-form select {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .site-form input,
@@ -140,5 +140,5 @@
 .site-form__agreement {
   font-size: 14px;
   line-height: 16px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, 0.8);
 }

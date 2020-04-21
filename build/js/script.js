@@ -39,7 +39,6 @@ $(function() {
   const POPUP_ELEMENT = document.querySelector(`.modal`);
   const OVERLAY_ELEMENT = document.querySelector(`.overlay`);
   const X_CLOSE_ELEMENT = POPUP_ELEMENT.querySelector(`.modal__close`);
-  const FORM_ELEMENT = POPUP_ELEMENT.querySelector(`.modal-callback__form`);
   const USER_NAME_ELEMENT = POPUP_ELEMENT.querySelector(`[name=name]`);
   const USER_PHONE_ELEMENT = POPUP_ELEMENT.querySelector(`[name=phone]`);
   const MESSAGE_ELEMENT = POPUP_ELEMENT.querySelector(`[name=callback-text]`);
@@ -135,7 +134,10 @@ $(function() {
     closePopup();
   });
 
-  FORM_ELEMENT.addEventListener(`submit`, function(evt) {
-    closePopup();
+  $(document).mouseup(function (e) {
+    let container = $(`.modal__wrapper`);
+    if(e.target != container[0] && !container.has(e.target).length) {
+      closePopup();
+    }
   });
 }());
