@@ -47,12 +47,6 @@
     border: 1px solid #ffffff;
   }
 
-  &:invalid {
-    outline: none;
-    box-shadow: none;
-    border: 1px solid #ff5660;
-  }
-
   @media (max-width: $tablet-width) {
     padding: 15px 18px;
   }
@@ -141,4 +135,9 @@
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+  }
 }
