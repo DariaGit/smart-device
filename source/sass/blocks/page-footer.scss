@@ -35,6 +35,10 @@
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
+    font-family: $main-font-family;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
 
     &::after {
       position: absolute;
@@ -120,7 +124,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 40px;
-    max-width: 89%;
+    max-width: 98.4%;
   }
 
   @media (max-width: $mobile-width) {
@@ -196,6 +200,9 @@
 }
 
 .page-footer__address {
+  font-family: $main-font-family;
+  font-size: 15px;
+  line-height: 25px;
   color: #1b2d37;
   opacity: 0.5;
 }
