@@ -36,6 +36,10 @@
     background: url("../img/paper-airplane.png") no-repeat center;
   }
 
+  @media (max-width: 1200px) {
+    width: 58%;
+  }
+
   @media (max-width: $tablet-width) {
     margin-left: 0;
     padding: 0 63px;
