@@ -31,6 +31,12 @@ if (BUTTON_ELEMENT && screen.width < MOBILE_WIDTH) {
 
 ACCORDION_ELEMENTS.forEach(function (item) {
   item.onclick = function () {
+    ACCORDION_ELEMENTS.forEach(function (i) {
+      if (i !== item) {
+        i.classList.add('accordion__toggle--close');
+        i.nextElementSibling.classList.remove('accordion__content--show');
+      }
+    });
     this.classList.toggle('accordion__toggle--close');
     this.nextElementSibling.classList.toggle('accordion__content--show');
   };
