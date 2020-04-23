@@ -100,7 +100,7 @@ CALLBACK_BUTTON_ELEMENT.addEventListener('click', function (evt) {
   openPopup();
 });
 
-X_CLOSE_ELEMENT.addEventListener('click', function (evt) {
+X_CLOSE_ELEMENT.addEventListener('click', function () {
   closePopup();
 });
 
