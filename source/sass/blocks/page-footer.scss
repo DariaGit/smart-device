@@ -111,9 +111,26 @@
 .page-footer__social-link {
   width: 27px;
   height: 27px;
-  object-fit: cover;
-  object-position: center;
   border-radius: 50%;
+  background: no-repeat center;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &--fb {
+    background-image: url("../img/icons/ok-icon.svg");
+  }
+
+  &--ok {
+    background-image: url("../img/icons/fb-icon.svg");
+  }
+
+  &--vk {
+    background-image: url("../img/icons/vk-icon.svg");
+  }
 }
 
 .page-footer__social-item {
