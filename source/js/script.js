@@ -3,8 +3,6 @@
 var BUTTON_ELEMENT = document.querySelector('.page-header__button-consultation');
 var MOBILE_WIDTH = 768;
 var BUTTON_TEXT = 'Бесплатная консультация';
-var ACCORDION_ELEMENTS = document.querySelectorAll('.accordion__toggle');
-
 var BODY_ELEMENT = document.querySelector('body');
 var CALLBACK_BUTTON_ELEMENT = document.querySelector('.page-header__button-call');
 var POPUP_ELEMENT = document.querySelector('.modal');
@@ -13,12 +11,9 @@ var X_CLOSE_ELEMENT = POPUP_ELEMENT.querySelector('.modal__close');
 var USER_NAME_ELEMENT = POPUP_ELEMENT.querySelector('[name=name]');
 var USER_PHONE_ELEMENT = POPUP_ELEMENT.querySelector('[name=phone]');
 var MESSAGE_ELEMENT = POPUP_ELEMENT.querySelector('[name=callback-text]');
-
 var QUESTION_TEXT_ELEMENT = document.querySelector('[name=question-text]');
-
 var KEY_CODE_ESC = 27;
 var KEY_CODE_ENTER = 13;
-
 var isStorageSupport = true;
 var storageUserName = '';
 var storageUserPhone = '';
@@ -29,12 +24,35 @@ if (BUTTON_ELEMENT && screen.width < MOBILE_WIDTH) {
   BUTTON_ELEMENT.textContent = BUTTON_TEXT;
 }
 
-ACCORDION_ELEMENTS.forEach(function (item) {
-  item.onclick = function () {
-    this.classList.toggle('accordion__toggle--close');
-    this.nextElementSibling.classList.toggle('accordion__content--show');
-  };
-});
+// Accordion with Vanilla JS without animation
+// var ACCORDION_ELEMENTS = document.querySelectorAll('.accordion__toggle');
+// ACCORDION_ELEMENTS.forEach(function (item) {
+//   item.addEventListener('click', function () {
+//     var thisToggle = this;
+//     var thisContent = item.nextElementSibling;
+//
+//     ACCORDION_ELEMENTS.forEach(function (item) {
+//       if (item !== thisToggle) {
+//         item.classList.remove('accordion__toggle--close');
+//         item.nextElementSibling.classList.remove('accordion__content--show');
+//       };
+//     });
+//
+//     thisContent.classList.toggle('accordion__content--show');
+//     thisToggle.classList.toggle('accordion__toggle--close');
+//   })
+// })
+
+$(function () {
+  $('.accordion__toggle').on('click', function () {
+    var thisContent = $(this).next();
+
+    $('.accordion__toggle').not(this).removeClass('accordion__toggle--close');
+    $('.accordion__content').not(thisContent).slideUp(400);
+    thisContent.slideToggle(400);
+    $(this).toggleClass('accordion__toggle--close');
+  })
+})
 
 try {
   storageUserName = localStorage.getItem('user-name');
